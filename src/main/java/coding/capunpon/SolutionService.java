@@ -22,6 +22,6 @@ public class SolutionService {
     }
 
     public SolutionResponse solve(ProblemRequest request) {
-        return solvers.get(request.getCategory()).solve(request.getData());
+        return solvers.get(request.getCategory()).solve(request.getData(), request.getProblemType());
     }
 }

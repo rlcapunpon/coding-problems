@@ -1,13 +1,18 @@
 package coding.capunpon.services.array;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class FindMissingNumberService {
-    public static int findMissing(int a[]) {
+    public static Set<Integer> findMissing(int a[]) {
         int n = a.length;
         int total = ((n + 1) * (n + 2)) / 2;
         for (int i = 0; i < n; i++) {
             total -= a[i];
         }
-        return total;
+        Set<Integer> resultSet = new HashSet<>();
+        resultSet.add(total);
+        return resultSet;
 
         /*
         In python, simply:

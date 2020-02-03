@@ -5,7 +5,7 @@ import java.util.Map;
 public class ProblemRequest {
     private String category;
     private String problemType;
-    private Map<String, Object> data;
+    private Object data;
 
     public String getProblemType() {
         return problemType;
@@ -15,11 +15,11 @@ public class ProblemRequest {
         this.problemType = problemType;
     }
 
-    public Map<String, Object> getData() {
+    public Object getData() {
         return data;
     }
 
-    public void setData(Map<String, Object> data) {
+    public void setData(Object data) {
         this.data = data;
     }
 
