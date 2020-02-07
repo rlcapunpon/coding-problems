@@ -1,5 +1,7 @@
 package coding.capunpon.services.array;
 
+import java.util.Set;
+
 public class ArrayProblems {
 
     public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class ArrayProblems {
         System.out.println(FindDuplicateNumberService.printRepeating(arr));
 
         int a[] = {1, 2, 4, 5, 6};
-        int miss = FindMissingNumberService.findMissing(a);
+        Set<Integer> miss = FindMissingNumberService.findMissing(a);
         System.out.println(miss);
 
         int ar[] = {10, 5, 3, 4, 3, 5, 6};

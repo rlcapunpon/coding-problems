@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class SolutionResponse implements Serializable {
     private String error;
-    private String result;
+    private Object result;
 
     public String getError() {
         return error;
@@ -14,11 +14,11 @@ public class SolutionResponse implements Serializable {
         this.error = error;
     }
 
-    public String getResult() {
+    public Object getResult() {
         return result;
     }
 
-    public void setResult(String result) {
+    public void setResult(Object result) {
         this.result = result;
     }
 }
